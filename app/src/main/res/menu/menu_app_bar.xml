@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/direct_message"
+        android:icon="@drawable/instagram_new_post_outline_24"
+        app:showAsAction="always">
+
+    </item>
+<item
+    android:id="@+id/favorite"
+    android:icon="@drawable/ufi_heart"
+    app:showAsAction="always"
+    >
+</item>
+
+
+    <item
+        android:id="@+id/post"
+        android:icon="@drawable/insta"
+        app:showAsAction="always"
+        >
+
+    </item>
+</menu>

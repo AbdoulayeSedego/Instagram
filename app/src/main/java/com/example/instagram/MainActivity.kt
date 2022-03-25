@@ -3,12 +3,15 @@ package com.example.instagram
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.parse.*
 import java.io.File
@@ -24,6 +27,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.setTitle("")
+        supportActionBar?.setIcon(R.drawable.nav_logo_whiteout)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayUseLogoEnabled(true)
+        
+        
         findViewById<ImageButton>(R.id.btnTakePicture).setOnClickListener {
 //            Allow user to take picture by launching the camera
             onLaunchCamera()
@@ -41,6 +50,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         queryPosts()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_app_bar, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return true
     }
 
 
@@ -61,6 +79,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Successfully Saved post", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val pb = findViewById<View>(R.id.progressBar) as ProgressBar
+        pb.visibility = ProgressBar.VISIBLE
+// run a background job and once complete
+// run a background job and once complete
+        pb.visibility = ProgressBar.INVISIBLE
 
     }
 

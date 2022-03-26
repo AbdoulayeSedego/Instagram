@@ -2,12 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:title="add_post"
         android:id="@+id/direct_message"
         android:icon="@drawable/instagram_new_post_outline_24"
         app:showAsAction="always">
 
     </item>
 <item
+    android:title="favorite"
     android:id="@+id/favorite"
     android:icon="@drawable/ufi_heart"
     app:showAsAction="always"
@@ -16,6 +18,7 @@
 
 
     <item
+        android:title="direct_message"
         android:id="@+id/post"
         android:icon="@drawable/insta"
         app:showAsAction="always"

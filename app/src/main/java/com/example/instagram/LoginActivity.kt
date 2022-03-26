@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
 
         user.signUpInBackground { e ->
             if (e == null) {
-                // Hooray! Let them use the app now.
+                Toast.makeText(this, "User Signed up Successfully", Toast.LENGTH_SHORT).show()
             } else {
                 e.printStackTrace()
             }

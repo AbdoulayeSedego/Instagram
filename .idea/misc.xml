@@ -7,8 +7,12 @@
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4665" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/activity_main.xml" value="0.4276041666666667" />
+        <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/fragment_compose.xml" value="0.5541666666666667" />
+        <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/fragment_feed.xml" value="0.5541666666666667" />
+        <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/item_post.xml" value="0.5541666666666667" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/layout/toolbar.xml" value="0.23385416666666667" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/menu/menu_app_bar.xml" value="0.5" />
+        <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5541666666666667" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.228" />
         <entry key="..\:/Programming/Kotlin/CodePath Android Development/Instagram/app/src/main/res/xml/fileprovider.xml" value="0.4276041666666667" />
       </map>

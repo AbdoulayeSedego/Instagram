@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
+// Implement sign out
 
 companion object {
     const val TAG = "LoginActivity"

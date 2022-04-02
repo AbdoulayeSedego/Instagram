@@ -2,10 +2,11 @@ package com.example.instagram.fragments
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.instagram.MainActivity
@@ -14,6 +15,7 @@ import com.example.instagram.PostAdapter
 import com.example.instagram.R
 import com.parse.FindCallback
 import com.parse.ParseException
+import com.parse.ParseObject
 import com.parse.ParseQuery
 
 
@@ -53,11 +55,13 @@ open class FeedFragment : Fragment() {
         val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
         //    Find all Post objects
         query.include(Post.KEY_USER)
-//            Return posts in descending order: ie newer posts will appear first
-        query.addAscendingOrder("createdAt")
+//            Return 20 first posts in descending order: ie newer posts will appear first
+//        query.addAscendingOrder("createdAt").limit = 20
+        query.orderByDescending("createdAt").limit = 20
 
-//        Return the most recent 20 posts
-//        TODO("later"){}
+
+//        view?.findViewById<TextView>(R.id.time)
+
 
         query.findInBackground(object : FindCallback<Post> {
             override fun done(posts: MutableList<Post>?, e: ParseException?) {
@@ -76,7 +80,6 @@ open class FeedFragment : Fragment() {
             }
         })
     }
-
 
 
     companion object {

@@ -44,4 +44,18 @@ class PostAdapter(val context: Context, val posts: List<Post>) : RecyclerView.Ad
 
         }
     }
+
+//    fun clear() {
+//
+//        posts.clear()
+//        notifyDataSetChanged()
+//    }
+//// Add a list of items -- change to type used
+//
+//    fun addAll(Post: List<Post>) {
+//        posts.addAll(Post)
+//        notifyDataSetChanged()
+//
+//    }
+
 }
